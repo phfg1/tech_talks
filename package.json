@@ -2,7 +2,7 @@
   "name": "tech_talks",
   "version": "1.0.0",
   "scripts": {
-    "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
+    "dev": "nodemon --watch src --ext js,scss,html --delay 1500ms --exec \"parcel src/index.html src/styles/main.scss src/scripts/main.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -10,6 +10,7 @@
   "description": "",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.14.4",
+    "nodemon": "^3.1.9",
     "parcel": "^2.14.4"
   }
 }
